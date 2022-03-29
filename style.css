@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@keyframes fade{
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+  /* font-family: 'Lobster', cursive; 
+    font-family: 'Teko', sans-serif; */
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-image: linear-gradient(252deg, rgba(188,234,234,1) 13%, rgba(182,155,199,1) 74%, rgba(182,140,217,1) 100%);
+    color: white;
+
+
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+
+nav a{
+    color: #ffff;
+    text-decoration: none;
+    margin: 5px 32px;
+}
+nav a:hover{
+    color: aquamarine;
+    transition: 0.2s;
+}
+
+main{
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    min-height: 100vh;
+    transition:transform 0.5s;
+
+}
+main.open{
+    transform: translate(240px,0);
+    
+}
+a.toggle-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #2a2a2a;
+    font-family: 'Lobster', cursive;
+}
+a.toggle-nav img{
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section div{
+    width: 350px;
+}
+section div.content{
+    margin: 0 0 0 60px;
+}
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+}
+
+p{
+    margin: 20px 0 20px 0;
+}
+a.button{
+    display: inline-block;
+    background-color: aquamarine;
+    color: grey;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+}
+
+div.slides{
+    height: 475px;
+    position: relative;
+   
+}
+div.slides:hover img{
+    box-shadow: 0 0 10px aquamarine;
+}
+div.slides img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+div.slides img:first-child{
+    z-index: 1;
+}

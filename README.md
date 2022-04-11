@@ -53,6 +53,7 @@ Using what I've learned I will do some more advanced things the next Repo commit
 - Website - (https://github.com/BlockStrt)
           - (https://twitter.com/BlckStrtr)
           - (https://blockstrt.github.io/SlideJect/)
+          - (https://blockstrt.github.io/seamstress/)
 
 ## Email
 (Blockstarter34@Gmail.com)
